@@ -1,4 +1,40 @@
 footer {
-  background-color: blue;
-  height: 50px;
+  background-color: @color-main;
+  color: #fff;
+
+  .footer-top {
+    padding: 20px 0;
+  }
+
+  .footer-bottom {
+    .container {
+      display: flex;
+      justify-content:  space-between;
+      align-items: center;
+    }
+    font-size: 0.7rem;
+    background-color: @color-secondary;
+
+    .back-to-top {
+      color: #fff;
+      i {
+        font-size: 3.5em;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+
+      .footer-bottom {
+        .rights {
+          display: block;
+        }
+      }
+
+  } //End MQ
+
 }

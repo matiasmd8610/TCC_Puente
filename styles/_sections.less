@@ -1,0 +1,69 @@
+main {
+  height: 800px;
+  padding-top: 80px;
+}
+
+.home {
+
+  .carousel {
+    height: 600px;
+
+    .carousel-inner {
+      height: 600px;
+    }
+
+    .carousel-item {
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+      .carousel-caption {
+        background: rgba(0, 0, 0, 0.2);
+        bottom: 10% !important;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;
+        max-width: 650px;
+
+        h5 {
+          font-size: 2em;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+
+    .carousel {
+      height: 300px;
+      .carousel-inner {
+        height: 300px;
+      }
+      .carousel-item {
+        .carousel-caption {
+          top: 30px;
+          bottom: auto !important;
+          width: auto;
+          left: 30px;
+          right: 30px;
+          padding: 10px;
+
+          h5 {
+            font-size: 1em;
+          }
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+  } //End MQ
+
+}
