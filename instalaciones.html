@@ -8,39 +8,16 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link rel="shortcut icon" href="images/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/main.css">
-  <script type="application/ld+json">
-    {
-     "@context" : "http://schema.org",
-     "@type" : "Organization",
-     "name" : "Terminal de Combustible Campana",
-     "legalName" : "Elite Strategies Llc",
-     "url" : "https://451.com",
-     "logo": "https://451.com/assets/img/logo-dark.png",
-     "sameAs" : [
-       "https://www.instagram.com/451com",
-       "https://www.linkedin.com/company/451com"
-      ],
-     "foundingDate":"1945-08-28",
-     "address": {
-       "@type": "PostalAddress",
-       "streetAddress": "Avenida del Libertador 498, 4to piso",
-       "addressLocality": "Ciudad Autónoma de Buenos Aires",
-       "addressRegion": "Buenos Aires",
-       "postalCode": "1001",
-       "addressCountry": "Argentina"
-     }
-    }
-    </script>
 </head>
 
 <body>
 
-  <header id="header" itemscope itemtype="https://schema.org/WPHeader">
+  <header id="header">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +25,7 @@
         </button>
         <a class="logo" href="index.html"><h1 class="sr-only">Terminal de Combustible Campana</h1></a>
         <div class="collapse navbar-collapse" id="nav">
-          <ul id="navbarNav" class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
+          <ul class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
             <li class="d-inline d-lg-none px-3 py-2 menu-close">
               <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
             </li>
@@ -68,7 +45,8 @@
               <a class="nav-link text-truncate contact-link" href="#footer">Contacto</a>
             </li>
             <li class="nav-item language d-flex align-items-center">
-              <a class="nav-link text-truncate m-0" href="/en"><i class="material-icons">language</i>ENG</a>
+              <a class="nav-link text-truncate m-0 d-none" href="#">ES</a>
+              <a class="nav-link text-truncate m-0" href="#"><i class="material-icons">language</i> EN</a>
             </li>
           </ul>
         </div>
@@ -79,83 +57,45 @@
 
   <main>
 
-    <section class="home">
-      <!-- Corousel -->
-      <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-home" data-slide-to="1"></li>
-          <li data-target="#carousel-home" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/slide-1.jpg" class="d-block w-100" alt="Ubicación Estratégica">
-            <div class="carousel-caption">
-              <h5>Ubicación Estratégica</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/slide-2.jpg" class="d-block w-100" alt="Capacidad técnica y logística">
-            <div class="carousel-caption">
-              <h5>Capacidad técnica y logística </h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/slide-3.jpg" class="d-block w-100" alt="Excelencia profesional">
-            <div class="carousel-caption">
-              <h5>Excelencia profesional</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
+    <section class="instalaciones mb-5">
+
+      <div class="banner">
+        <div class="container">
+          <h2 data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Instalaciones</h2>
         </div>
-        <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
 
-      <div class="home-heading">
-        <div class="container">
-          <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">Somos el socio estratégico para las empresas que buscan ampliar su capacidad y potenciar su logística en la región.</h2>
-          <div class="know-more" data-aos="fade-left" data-aos-duration="1500">
-            <a href="/nosotros.html">Conocé más</a>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="box-instalaciones box-puerto bg-green mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Puerto</h2>
+            <p class="lead">Nuestra terminal posee un puerto de 250 metros que permite la cómoda recepción de embarcaciones de hasta 32 pies de calado y 220 metros de eslora, habilitado para operaciones de importación y exportación.</p>
+          </div>
+        </div>
+        <div class="box-instalaciones box-operaciones bg-gray mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1000" data-aos-delay="500">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Área de operaciones</h2>
+            <p class="lead">El puerto incluye un área de operaciones para carga de camiones, con disponibilidad para despachar hasta 4.000 m<sup>3</sup> diarios, con balanza fiscal.</p>
           </div>
         </div>
       </div>
 
-      <div class="home-features">
-        <div class="container">
-          <div class="features-container d-md-flex justify-content-center">
-            <div class="item text-center" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
-              <figure>
-                <img src="images/boat-from-front-view.png" alt="Puerto de 250 M">
-              </figure>
-              <h4>Puerto de <br><span>250 m</span></h4>
-            </div>
-            <div class="item text-center" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200" data-aos-duration="1000">
-              <figure>
-                <img src="images/truck.png" alt="AREA DE OPERACIONES">
-              </figure>
-              <h4>Área de operaciones para despachar hasta <span>4.000 m<sup>3</sup></span> diarios</h4>
-            </div>
-            <div class="item text-center" data-aos="fade-left" data-aos-offset="300" data-aos-duration="1000">
-              <figure>
-                <img src="images/tank.png" alt="140 MIL M3 DE ALMACENAMIENTO">
-              </figure>
-              <h4><span>140 mil m<sup>3</sup></span> de almacenamiento</h4>
-            </div>
+      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 row-2">
+        <div class="box-instalaciones box-almacenamiento bg-gray mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+          <div class="my-3 p-3">
+            <h2 class="display-5">Capacidad de almacenamiento</h2>
+            <p class="lead">La terminal cuenta con una capacidad de almacenamiento total de más 140 mil m<sup>3</sup>, distribuida en 11 tanques principales fiscales, con volúmenes de entre 26.000 y 6.000 m<sup>3</sup>, y 55 más pequeños, con volúmenes de 1.000 y 300 m<sup>3</sup>.</p>
+          </div>
+        </div>
+        <div class="box-instalaciones box-terreno bg-green mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+          <div class="my-3 py-3">
+            <h2 class="display-5">Futura expansión</h2>
+            <p class="lead">Anticipando la creciente demanda de nuestros clientes, el terreno dispone de más de 90 hectáreas de espacio inactivo para desarrollar una futura expansión.</p>
           </div>
         </div>
       </div>
 
     </section>
-
 
   </main>
 
@@ -168,8 +108,8 @@
           <div class="col-md-6 col-lg-5 mb-4 mb-lg-0">
             <span class="d-block mb-2 location">OFICINA</span>
             <address class="mb-1">
-              <i class="material-icons mb-5 mb-lg-2">location_on</i> Avenida del Libertador 498, 4to piso <br>
-              (1001) Ciudad Autónoma de Buenos Aires<br>
+              <i class="material-icons mb-5 mb-lg-2">location_on</i> Avda del Libertador 498, 4to piso <br>
+              (1001) Ciudad Autónoma de Buenos Aires <br>
             </address>
             <i class="material-icons">phone</i> Tel: <a href="tel:+54117078-55600">+54 11 7078-5560</a>
           </div>

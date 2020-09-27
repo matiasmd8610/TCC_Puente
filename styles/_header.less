@@ -53,6 +53,9 @@ header {
             width: 100%;
           }
         }
+        &.active {
+          color: @color-main;
+        }
       }
 
       .menu-close {
@@ -62,6 +65,8 @@ header {
 
         button {
           font-size: 2.2rem;
+          position: relative;
+          z-index: 9999;
         }
       }
     }
@@ -84,32 +89,17 @@ header {
     }
   }
 
-  /*.language {
-    margin-left: 20px;
-    button {
-      display: flex;
-      align-items: center;
-      background-color: @color-main;
-      &:after {
-        display: none;
+  @media (max-width: 991px) {
+      .logo {
+        width: 175px;
+        height: 50px;
       }
-      i {
-        margin-left: 5px;
-      }
-    }
-    .dropdown-menu {
-      min-width: auto;
-      max-width: 100%;
-    }
-  }*/
-
-  @media (max-width: 992px) {
       .navbar-collapse.collapsing .navbar-nav {
           display: block;
           position: fixed;
           top: 0;
           bottom: 0;
-          left: -75%;
+          left: -70%;
           transition: all 0.2s ease;
       }
 
@@ -120,19 +110,31 @@ header {
           left: 0;
           flex-direction: column;
           height: auto;
-          width: 75%;
+          width: 70%;
           transition: left 0.35s ease;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           background: #fff;
-          z-index: 9999;
+          z-index: 9998;
 
           .nav-item {
             &.language {
-              padding-left: 1rem;
               margin-top: .8rem;
               margin-left: 0;
               a {
                 padding: 0 .2rem;
+              }
+            }
+            .nav-link {
+              border-bottom: 1px solid #eee;
+              padding: 0.6rem 0;
+              margin: 0 0.5rem;
+              &:after {
+                display: none;
+              }
+            }
+            &:last-child {
+              .nav-link {
+                border: 0;
               }
             }
           }
