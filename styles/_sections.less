@@ -5,6 +5,49 @@ main {
   }
 }
 
+.banner {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  background-image: url('../../images/banner_instalaciones.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 50px;
+  h2 {
+    color: #fff;
+    font-family: @secondary-font;
+    font-weight: 300;
+    font-size: 2.8rem;
+    position: relative;
+    display: inline-block;
+    padding: 20px 30px 20px 0;
+    background: rgba(0,0,0,0.2);
+    &:before {
+      content: '';
+      display: block;
+      background: rgba(0,0,0,0.2);
+      height: 100%;
+      left: -300%;
+      position: absolute;
+      width: 300%;
+      top: 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+      padding: 0;
+      height: 180px;
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 15px 15px 15px 0;
+      }
+  } //End MQ
+
+}
+
 //-------------HOME--------------------------
 .home {
 
@@ -165,38 +208,6 @@ main {
 
 //--------------INSTALACIONES------------------------
 .instalaciones {
-  .banner {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    background-image: url('../../images/banner_instalaciones.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    margin-bottom: 50px;
-    position: relative;
-    &:before {
-      display: block;
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0.7;
-      background-color: @color-secondary;
-    }
-    h2 {
-      color: #fff;
-      font-family: @secondary-font;
-      font-weight: 400;
-      font-size: 2.5rem;
-      position: relative;
-      z-index: 4;
-    }
-  }
   .box-instalaciones {
     flex: 1;
     background-size: cover;
@@ -256,14 +267,6 @@ main {
   }
 
   @media (max-width: 992px) {
-    .banner {
-      padding: 0;
-      height: 140px;
-      h2 {
-        font-size: 2rem;
-        text-align: center;
-      }
-    }
     .box-instalaciones {
       .lead {
         font-size: 1rem;
@@ -294,95 +297,51 @@ main {
 
   } //End MQ
 }
-  //----------------- SERVICIOS -----------------/
-.services{
 
- h2.display-4{padding-left: 30%!important;font-family: "Lato", sans-serif;font-weight: 300;}
-  .banner{background: rgba(0,0,0,0.2);padding: 20px;
-margin-right: auto;
-width: 45%;}
-  .bg-dark{ background-image: url("../../images/banner2.png")!important;}
-  .p-md-5 {padding: 6rem 0 6rem 0 !important;}
-  .p-md-5 {margin-top: 80px!important;}
-  .srv{font-size: 16px; font-family: 'Montserrat', sans-serif;text-align: left;width: 250px;margin: 0 auto;}
-  p{font-size: 18px; font-family: 'Montserrat', sans-serif;   line-height: 2rem;}
+//----------------- SERVICIOS -----------------/
+.services {
+    margin-bottom: 50px;
+    h2.display-4 { padding-left: 30%!important;font-family: @secondary-font; font-weight: 300;}
+    .p-md-5 {padding: 6rem 0 6rem 0 !important;}
+    .p-md-5 {margin-top: 80px!important;}
+    .srv{font-size: 16px; text-align: left;width: 235px; margin: 0 auto;}
+    p {font-size: 18px; line-height: 2rem;}
 
-  .container{width:90%;}
-  .container{margin:0 auto;max-width:1280px;width:90%;background-color: #fff;}
+    /* modulo 2 columnas */
+    h3{font-size:2.5rem; font-family: "Lato", sans-serif;}
+    .lead{font-size:18px; font-weight: 400;line-height: 2rem;}
+    .bg-light {background-color: #efefef !important;}
+
+    .shadow-sm{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important; max-width: 100%;}
+
+    @media (min-width: 768px){
+      .flex-md-equal > *{-ms-flex:1;flex:1;}
+    }
+
+    @media (max-width: 767px){
+      .flex-md-equal .bg-light{margin: 15px;}
+      h3 {
+          font-size: 2.2rem;
+          font-family: "Lato",sans-serif;
+      }
+    }
+
+  }
+
+//----------------- NOSOTROS -----------------/
+.about-us {
+
+  h2.display-4 {padding-left: 30%!important;font-family: "Lato", sans-serif;font-weight: 300;}
+  .banner{ background-image: url('../../images/banner2.png') !important; background-size: auto;}
+  .p-md-5 { padding: 6rem 0 6rem 0 !important;}
+  .p-md-5 { margin-top: 80px!important;}
+  .highlight {color:@color-third!important; font-size: 30px!important}
+  p {font-size: 18px; line-height: 2rem;}
 
   @media only screen and (min-width: 601px){
-  .container{width:85%;}
-
-  }
-  @media only screen and (min-width: 993px){
-  .container{width:100%!important;}
-  }
-
-
-  /* modulo 2 columnas */
-  h2{margin-top:0;margin-bottom:.5rem;}
-  p{margin-top:0;margin-bottom:1rem;}
-  h2{margin-bottom:.5rem;font-weight:500;line-height:1.2;}
-  h3{font-size:2.5rem; font-family: "Lato", sans-serif;}
-  .lead{font-size:18px;font-family: "Montserrat" sans-serif;font-weight: 400;line-height: 2rem;}
-  .bg-light{background-color:#dbdbdb!important;}
-  .bg-white{background-color:#fff!important;}
-
-  @media (min-width:768px){
-  .d-md-flex{display:-ms-flexbox!important;display:flex!important;}
-  }
-  .overflow-hidden{overflow:hidden!important;}
-  .shadow-sm{box-shadow:0 .125rem .25rem rgba(0,0,0,.075)!important;}
-  .w-100{width:100%!important;}
-  .my-3{margin-top:1rem!important;min-height: 280px!important;}
-  .my-3{margin-bottom:1rem!important;}
-  .p-3{padding:1rem!important;}
-  .pt-3,.py-3{padding-top:1rem!important;}
-  .px-3{padding-right:1rem!important;}
-  .py-3{padding-bottom:1rem!important;}
-  .px-3{padding-left:1rem!important;}
-  .mx-auto{margin-right:auto!important;}
-  .mx-auto{margin-left:auto!important;}
-
-  @media (min-width:768px){
-  .my-md-3{margin-top:3rem!important;}
-  .mr-md-3{margin-right:1rem!important;}
-  .my-md-3{margin-bottom:5rem!important;}
-  .pl-md-3{padding-left:1rem!important;}
-  .pt-md-5{padding-top:3rem!important;}
-  .px-md-5{padding-right:3rem!important;}
-  .px-md-5{padding-left:3rem!important;}
-  }
-  .text-center{text-align:center!important;}
-
-  @media (min-width: 768px){
-  .flex-md-equal > *{-ms-flex:1;flex:1;}
-  }
-  .overflow-hidden{overflow:hidden;}
-
-  }   /*** cierra SERVICIOS ***/
-
-  //----------------- NOSOTROS -----------------/
-
-.about-us{
-  h2.display-4{padding-left: 30%!important;font-family: "Lato", sans-serif;font-weight: 300;}
-  .banner{background: rgba(0,0,0,0.2);padding: 20px;margin-right: auto;width: 45%;}
-  .bg-dark{ background-image: url("../../images/banner2.png")!important;}
-  .p-md-5 {padding: 6rem 0 6rem 0 !important;}
-  .p-md-5 {margin-top: 80px!important;}
-  .highlight{color:@color-third!important;font-family: 'Montserrat', sans-serif; font-size: 30px!important}
-  p{font-size: 18px; font-family: 'Montserrat', sans-serif; line-height: 2rem;}
-
-  .row{margin-left:auto;margin-right:auto;margin-bottom:20px;}
-  .row:after{content:"";display:table;clear:both;}
-  .row .col{float:left;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 1rem;min-height:1px;}
-  .row .col.s12{width:100%;margin-left:auto;left:auto;right:auto;}
-  @media only screen and (min-width: 601px){
-  .row .col.m6{width:50%;margin-left:auto;left:auto;right:auto;}
+    .row .col.m6{width:50%;margin-left:auto;left:auto;right:auto;}
   }
   .black-text{color:#494747!important;}
-  .container{width:90%;}
   .col{margin-bottom:30px;margin-top:30px!important;}
 
-
-}  /*** cierra NOSOTROS  ***/
+}
