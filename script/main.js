@@ -8,7 +8,8 @@ $(document).ready(function(){
     });
 
     AOS.init({
-      once: true
+      once: true,
+      offset: 300
     });
 
     //set class active to current page-----------------------

@@ -17,7 +17,7 @@
 
 <body>
 
-  <header id="header">
+  <header id="header" itemscope itemtype="https://schema.org/WPHeader">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,28 +25,27 @@
         </button>
         <a class="logo" href="index.html"><h1 class="sr-only">Terminal de Combustible Campana</h1></a>
         <div class="collapse navbar-collapse" id="nav">
-          <ul class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
+          <ul id="navbarNav" class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
             <li class="d-inline d-lg-none px-3 py-2 menu-close">
               <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-truncate" href="/index.html">Inicio</a>
+              <a class="nav-link text-truncate" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-truncate" href="/nosotros.html">Nosotros</a>
+              <a class="nav-link text-truncate" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-truncate" href="/instalaciones.html">Instalaciones</a>
+              <a class="nav-link text-truncate" href="instalaciones.html">Instalaciones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-truncate" href="/servicios.html">Servicios</a>
+              <a class="nav-link text-truncate" href="servicios.html">Servicios</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-truncate contact-link" href="#footer">Contacto</a>
             </li>
             <li class="nav-item language d-flex align-items-center">
-              <a class="nav-link text-truncate m-0 d-none" href="#">ES</a>
-              <a class="nav-link text-truncate m-0" href="#"><i class="material-icons">language</i> EN</a>
+              <a class="nav-link text-truncate m-0" href="/en"><i class="material-icons">language</i>ENG</a>
             </li>
           </ul>
         </div>
@@ -59,39 +58,45 @@
 
     <section class="instalaciones mb-5">
 
-      <div class="banner">
+      <div class="banner banner-instalaciones">
         <div class="container">
-          <h2 class="m-0" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Instalaciones</h2>
+          <h2 class="m-0" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">Instalaciones</h2>
         </div>
       </div>
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-        <div class="box-instalaciones box-puerto bg-green mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Puerto</h2>
-            <p class="lead">Nuestra terminal posee un puerto de 250 metros que permite la cómoda recepción de embarcaciones de hasta 32 pies de calado y 220 metros de eslora, habilitado para operaciones de importación y exportación.</p>
-          </div>
-        </div>
-        <div class="box-instalaciones box-operaciones bg-gray mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1000" data-aos-delay="500">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Área de operaciones</h2>
-            <p class="lead">El puerto incluye un área de operaciones para carga de camiones, con disponibilidad para despachar hasta 4.000 m<sup>3</sup> diarios, con balanza fiscal.</p>
-          </div>
-        </div>
-      </div>
+      <div class="container">
+        <div class="row">
 
-      <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 row-2">
-        <div class="box-instalaciones box-almacenamiento bg-gray mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
-          <div class="my-3 p-3">
-            <h2 class="display-5">Capacidad de almacenamiento</h2>
-            <p class="lead">La terminal cuenta con una capacidad de almacenamiento total de más 140 mil m<sup>3</sup>, distribuida en 11 tanques principales fiscales, con volúmenes de entre 26.000 y 6.000 m<sup>3</sup>, y 55 más pequeños, con volúmenes de 1.000 y 300 m<sup>3</sup>.</p>
+          <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+            <div class="box-instalaciones box-puerto bg-green mr-md-3 p-3 p-lg-4 text-center text-white overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
+              <div class="my-3 py-3">
+                <h2 class="display-5">Puerto</h2>
+                <p class="lead">Nuestra terminal posee un puerto de 250 metros que permite la cómoda recepción de embarcaciones de hasta 32 pies de calado y 220 metros de eslora, habilitado para operaciones de importación y exportación.</p>
+              </div>
+            </div>
+            <div class="box-instalaciones box-operaciones bg-gray mr-md-3 p-3 p-lg-4 text-center text-white overflow-hidden" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+              <div class="my-3 p-3">
+                <h2 class="display-5">Área de operaciones</h2>
+                <p class="lead">El puerto incluye un área de operaciones para carga de camiones, con disponibilidad para despachar hasta 4.000 m<sup>3</sup> diarios, con balanza fiscal.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="box-instalaciones box-terreno bg-green mr-md-3 p-3 p-lg-5 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
-          <div class="my-3 py-3">
-            <h2 class="display-5">Futura expansión</h2>
-            <p class="lead">Anticipando la creciente demanda de nuestros clientes, el terreno dispone de más de 90 hectáreas de espacio inactivo para desarrollar una futura expansión.</p>
+
+          <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3 row-2">
+            <div class="box-instalaciones box-almacenamiento bg-gray mr-md-3 p-3 p-lg-4 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-3 p-3">
+                <h2 class="display-5">Capacidad de almacenamiento</h2>
+                <p class="lead">La terminal cuenta con una capacidad de almacenamiento total de más 140 mil m<sup>3</sup>, distribuida en 11 tanques principales fiscales, con volúmenes de entre 26.000 y 6.000 m<sup>3</sup>, y 55 más pequeños, con volúmenes de 1.000 y 300 m<sup>3</sup>.</p>
+              </div>
+            </div>
+            <div class="box-instalaciones box-terreno bg-green mr-md-3 p-3 p-lg-4 text-center text-white overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
+              <div class="my-3 py-3">
+                <h2 class="display-5">Futura expansión</h2>
+                <p class="lead">Anticipando la creciente demanda de nuestros clientes, el terreno dispone de más de 90 hectáreas de espacio inactivo para desarrollar una futura expansión.</p>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
 
