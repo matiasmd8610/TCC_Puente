@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  //Overlay background when dropdown is open----------------------
-    $("main").on("click", function() {
+  //Close menú
+    $("main , .contact-link").on("click", function() {
      if ($(".collapse").hasClass("show")) {
        $('.navbar-collapse').collapse('hide');
      }
