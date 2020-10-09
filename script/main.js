@@ -13,7 +13,16 @@ $(document).ready(function(){
     });
 
     //set class active to current page-----------------------
-    var current = location.pathname;
+    var current = location.pathname.split("/")[1];
+    if (current == "en") {
+      current = location.pathname.split("/")[2];
+    }
+    if (current === "") {
+      current = "/";
+    } else if (current.indexOf(".") == -1) {
+      current = current + '.html';
+    }
+    
     $('#nav ul li a').each(function() {
         var $this = $(this);
         // we check comparison between current page and attribute redirection.
