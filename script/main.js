@@ -14,6 +14,8 @@ $(document).ready(function(){
 
     //set class active to current page-----------------------
     var current = location.pathname.split("/")[1];
+    var current2 = location.pathname.split("/")[2];
+
     if (current == "en") {
       current = location.pathname.split("/")[2];
     }
@@ -22,7 +24,10 @@ $(document).ready(function(){
     } else if (current.indexOf(".") == -1) {
       current = current + '.html';
     }
-    
+    if (current2 == "") {
+      current = "/en/"
+    }
+
     $('#nav ul li a').each(function() {
         var $this = $(this);
         // we check comparison between current page and attribute redirection.
