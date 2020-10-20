@@ -12,7 +12,69 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="styles/css/main.css">
+  <style>
+      header .navbar {
+        background-color: #fff;
+        box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+      }
+      header .logo {
+          width: 200px;
+          height: 65px;
+          display: block;
+          background-image: url('images/logo_tcc.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center center;
+      }
+      .page-404 {
+        padding: 180px 0 100px;
+        font-family: 'Montserrat', sans-serif, Helvetica;
+        min-height: 100vh;
+      }
+      .page-404 .number-4040 {
+        font-size: 8.5em;
+        font-weight: bold;
+        color: #0A594B;
+        line-height: 1.2;
+      }
+      .page-404 p.page {
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      .page-404 .zero {
+        color: #067302;
+      }
+      .page-404 .btn-back {
+        text-align: center;
+      }
+      .page-404 .btn-back a {
+        border: 2px solid #0A594B;
+        background-color: #0A594B;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: .4em;
+        font-weight: 600;
+        margin-top: 30px;
+        text-decoration: none;
+      }
+      .page-404 .btn-back a:hover {
+        background: #fff;
+        color: #0A594B;
+      }
+      @media (max-width: 991px) {
+        header .logo {
+          width: 175px;
+          height: 50px;
+          margin: 0 auto;
+        }
+      }
+      @media (max-width: 767px) {
+        .page-404 .number-4040 {
+          font-size: 6.5em;
+        }
+      }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -39,43 +101,14 @@
   <header id="header" itemscope itemtype="https://schema.org/WPHeader">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <a class="logo" href="/"><h1 class="sr-only">Terminal de Combustible Campana</h1></a>
-        <div class="collapse navbar-collapse" id="nav">
-          <ul id="navbarNav" class="navbar-nav m-0 ml-lg-auto p-3 p-lg-0">
-            <li class="d-inline d-lg-none px-3 py-2 menu-close">
-              <button data-toggle="collapse" data-target="#nav" class="close float-right">&times;</button>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-truncate" href="/">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-truncate" href="nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-truncate" href="instalaciones.html">Instalaciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-truncate" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-truncate contact-link" href="#footer">Contacto</a>
-            </li>
-            <li class="nav-item language d-flex align-items-center">
-              <a class="nav-link text-truncate m-0" href="/en/"><i class="material-icons">language</i>ENG</a>
-            </li>
-          </ul>
-        </div>
-
       </div>
     </nav>
   </header>
 
   <main>
 
-    <section class="page-404">
+    <section class="page-404 page-404-es" style="display:none;">
       <div class="container">
           <div class="text-center w-100">
             <span class="number-4040 m-0">4<span class="zero">0</span>4</span>
@@ -89,71 +122,38 @@
       </div>
     </section>
 
+    <section class="page-404 page-404-en" style="display:none;">
+      <div class="container">
+          <div class="text-center w-100">
+            <span class="number-4040 m-0">4<span class="zero">0</span>4</span>
+            <p class="page">Ups! The page you are looking for doesn't exist.<p>
+            <p>Please click the button below to go back to the homepage.
+            </p>
+            <div class="btn-back">
+              <a href="/en/">Go Home</a>
+            </div>
+          </div>
+      </div>
+    </section>
+
   </main>
-
-  <footer id="footer" itemscope itemtype="https://schema.org/WPFooter">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-md-6 col-lg-5 mb-4 mb-lg-0">
-            <span class="d-block mb-2 location">OFICINA</span>
-            <address class="mb-2">
-              <i class="material-icons mb-5 mb-sm-3 mb-lg-2 location-icon" aria-label="Dirección">location_on</i> Avenida del Libertador 498, 4to piso <br>
-              (1001) Ciudad Autónoma de Buenos Aires<br>
-            </address>
-            <i class="material-icons">phone</i> Tel: <a href="tel:+54117078-55600">+54 11 7078-5560</a>
-            <br>
-            <span class="d-inline-block mt-2"><i class="material-icons" aria-label="e-mail">mail_outline</i><a href="mailto:info@tccar.com.ar">info@tccar.com.ar</a></span>
-          </div>
-
-          <div class="col-md-6 col-lg-5 mb-3 mb-lg-0">
-            <span class="d-block mb-2 location">TERMINAL</span>
-            <address class="mb-1">
-              <i class="material-icons mb-5" aria-label="Dirección">location_on</i> Avda. Larrabure 650 <br>
-              (2804) Campana <br>
-              Provincia de Buenos Aires
-            </address>
-          </div>
-
-          <div class="col-lg-2">
-            <ul class="footer-nav mb-0">
-              <li class="nav-item">
-                <a class="text-truncate" href="/">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="ntext-truncate" href="nosotros.html">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-truncate" href="instalaciones.html">Instalaciones</a>
-              </li>
-              <li class="nav-item">
-                <a class="text-truncate" href="servicios.html">Servicios</a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="copy text-center py-3">
-          &copy; <span class="year-copy">2020</span> Terminal de Combustible Campana. <span class="rights">Todos los derechos reservados.</span>
-        </div>
-        <a href="#header" class="back-to-top"><i class="material-icons">keyboard_arrow_up</i></a>
-      </div>
-    </div>
-
-  </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="script/main.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  var current = location.pathname.split("/")[1];
+
+  if (current == "en") {
+    $('.page-404-en').show();
+    $('.logo').css('background-image','url(../images/logo_tcc.png)');
+    $('.logo').attr("href", "/en/");
+  } else {
+    $('.page-404-es').show();
+  }
+  </script>
 </body>
 
 </html>
