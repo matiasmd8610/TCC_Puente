@@ -41,4 +41,7 @@ $(document).ready(function(){
       $(this).addClass('active');
     });
 
+    //Update copy automatically
+    document.querySelector('.year-copy').innerText = new Date().getFullYear();
+
 });
